@@ -3,25 +3,33 @@
 <head>
     <title>Hit the Books</title>
     <meta charset="utf-8" />
-    <script src="lib/p5/p5.js"></script>
-    <script src="lib/p5/addons/p5.sound.js"></script>
-    <script src="lib/matter-js-master/build/matter.js"></script>
+    
     <style>
         body {
             margin: 0;
-            padding: 40px;
+            padding: 0px;
         }
-        main {
-          text-align: center;
+        iframe {
+          width: 1000px;
+          height: 604px;
+          padding: 0;
+          margin: 0;
+          border: none;
+        } 
+        .gameContainer {
+          width: 1000px;
+          height: 604px;
+          margin: auto;
+          margin-top: 40px;
+          overflow: 'scroll';
         }
     </style>
 
 </head>
 <body>
-  <script src="slingshot.js"></script>
-  <script src="bird.js"></script>
-  <script src="box.js"></script>
-  <script src="ground.js"></script>
-  <script src="sketch.js"></script>
+  <div class="gameContainer">
+     <iframe title="game" src="game.html" border=0></iframe>
+  </div>
+  
 </body>
 </html>
